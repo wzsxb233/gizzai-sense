@@ -1,0 +1,5 @@
+torch>=2.4
+transformers>=5.17
+huggingface_hub>=1.0
+pillow
+librosa

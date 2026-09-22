@@ -1,0 +1,40 @@
+Gizzai Sense (叽喳 Sense)
+Copyright 2026 邓颐村 (Deng Yicun).
+Licensed by GizzAI Technology Limited Co. (广州叽喳科技有限公司).
+
+This distribution contains a modified version of Gemma 4 (google/gemma-4-E2B-it) by Google LLC,
+licensed under the Apache License, Version 2.0 (see LICENSE-APACHE-2.0). Use of Gemma
+and of models derived from it is subject to the Gemma Prohibited Use Policy:
+https://ai.google.dev/gemma/prohibited_use_policy
+
+Modifications: a low-rank adaptation of the language model's attention and feed-forward
+projection matrices was trained and merged into those matrices. Every other tensor
+(vision and audio encoders, embeddings, normalisation) is unchanged, bit for bit.
+Tokenizer, processor and chat-template files are Google's, unmodified.
+
+The reference inference code (sense.py, sense_format.py) is licensed under the Gizzai
+Sense License (see LICENSE), on the same terms as the weights.
+
+Training data. The model was trained on the following datasets, used under their licences:
+  - stanfordnlp/snli -- CC BY-SA 4.0 -- https://nlp.stanford.edu/projects/snli/
+  - google-research-datasets/paws -- free for any purpose -- https://github.com/google-research-datasets/paws/blob/master/LICENSE
+  - google-research-datasets/paws-x -- free for any purpose -- https://github.com/google-research-datasets/paws/blob/master/LICENSE
+  - google/civil_comments -- CC0 -- https://huggingface.co/datasets/google/civil_comments
+  - voidful/StrategyQA -- MIT -- https://github.com/eladsegal/strategyqa/blob/main/LICENSE
+  - voidful/csqa2 -- CC BY 4.0 -- https://github.com/allenai/csqa2/blob/master/LICENSE
+  - google/boolq -- CC BY-SA 3.0 -- https://github.com/google-research-datasets/boolean-questions
+  - nyu-mll/multi_nli -- OANC + CC BY / BY-SA 3.0 -- https://huggingface.co/datasets/nyu-mll/multi_nli
+  - MTEB/banking77 -- CC BY 4.0 -- https://github.com/PolyAI-LDN/task-specific-datasets/blob/master/LICENSE
+  - MTEB/amazon_massive_intent -- CC BY 4.0 -- https://github.com/alexa/massive/blob/main/NOTICE.md
+  - allenai/ai2_arc -- CC BY-SA 4.0 -- https://huggingface.co/datasets/allenai/ai2_arc
+  - opencompass/commonsense_qa -- MIT -- https://github.com/jonathanherzig/commonsenseqa/issues/5
+  - allenai/winogrande -- CC BY -- https://github.com/allenai/winogrande
+  - extraordinarylab/piqa -- AFL-3.0 -- https://yonatanbisk.com/piqa/
+  - opencompass/siqa -- CC BY 4.0 -- https://allenai.org/data/socialiqa
+  - allenai/openbookqa -- Apache-2.0 -- https://github.com/allenai/OpenBookQA/blob/main/LICENSE
+  - AI-ModelScope/HelpSteer2 -- CC BY 4.0 -- https://huggingface.co/datasets/nvidia/HelpSteer2
+  - MTEB/stsbenchmark-sts -- CC BY-SA 4.0 (scores); MSR/DEFT sources excluded -- https://github.com/kawine/usif/blob/master/STSBenchmark/LICENSE.txt
+  - Oxford-IIIT Pet (Parkhi et al., 2012) -- CC BY-SA 4.0 -- https://www.robots.ox.ac.uk/~vgg/data/pets/
+  - Speech Commands v0.02 (Warden, 2018) -- CC BY 4.0 -- https://arxiv.org/abs/1804.03209
+
+Datasets used only for evaluation are listed in README.md.
