@@ -24,4 +24,4 @@ This remains a **TEST** package until real Mac, iPhone, Metal, and device confor
 
 ## MLX local test / MLX 本地测试
 
-The Apple bundle includes one copy of the E2B checkpoint and the MLX adapter instructions in [`MLX.md`](MLX.md). The adapter is experimental until the Mac conformance run is completed. / Apple 包含一份 E2B 权重，并在 [`MLX.md`](MLX.md) 中提供 MLX adapter 说明；完成 Mac 一致性测试前，adapter 保持实验性。
+The full Apple MLX bundle includes E2B and E4B weights plus the Sense-T adapter assets. E2B and Sense-T share one base checkpoint copy; see [`MLX.md`](MLX.md). The adapter remains experimental until the Mac conformance run is completed. / 完整 Apple MLX 包含 E2B、E4B 权重与 Sense-T adapter 资源。E2B 与 Sense-T 共用一份基础权重；详见 [`MLX.md`](MLX.md)。完成 Mac 一致性测试前，adapter 保持实验性。
