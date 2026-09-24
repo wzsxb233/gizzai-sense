@@ -94,6 +94,7 @@ PY
 
 The released demo video is a real-model recording. The bilingual edition carries Chinese
 voice-over and dual Chinese-English captions. / 发布的视频是真实模型录制；双语版保留中文配音，并加入中英双语字幕。
+The burned-in captions sit in a dedicated top safe band, leaving the dashboard unobstructed. / 字幕烧录在专用的顶部安全区，避免遮挡仪表盘主体。
 
 ## Limitations and use / 局限与使用
 
