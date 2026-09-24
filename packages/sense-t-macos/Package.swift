@@ -3,7 +3,7 @@ import PackageDescription
 
 let package = Package(
     name: "SenseTMac",
-    platforms: [.macOS(.v13)],
+    platforms: [.macOS(.v13), .iOS(.v17)],
     products: [.executable(name: "SenseTMac", targets: ["SenseTMac"])],
     targets: [.executableTarget(name: "SenseTMac")]
 )

@@ -41,11 +41,9 @@ The current vLLM and MLX adapters are for the base text model; Sense-T on those 
 ## Test packages / 试用包
 
 The repository contains two bilingual target-device shells. They use the same `--gz-*` design tokens,
-GizzAI fonts and brand mark as the demos, and call the released `/v1/forecast`, `/v1/ask` and `/v1/scenario`
-API. / 仓库中有两个双语目标设备试用壳，使用 demo 相同的 `--gz-*` 设计 token、GizzAI 字体与品牌标志，并调用已发布的 `/v1/forecast`、`/v1/ask`、`/v1/scenario` API。
+GizzAI fonts and brand mark as the demos, and call the released Sense `/v1/decide` or Sense-T `/v1/forecast` API. / 仓库中有两个双语目标设备试用壳，使用 demo 相同的 `--gz-*` 设计 token、GizzAI 字体与品牌标志，并调用已发布 Sense 的 `/v1/decide` 或 Sense-T 的 `/v1/forecast` API。
 
-- `packages/sense-t-macos/` — SwiftUI / macOS 试用包
-- `packages/sense-t-android/` — Jetpack Compose / Android 试用包
+- `packages/sense-t-macos/` — SwiftUI / macOS + iPhone 三模型试用包
+- `packages/sense-t-android/` — Jetpack Compose / Android 三模型试用包
 
-Both packages require a running Sense-T server and are intentionally marked as test shells until a real
-Mac and Android device pass the runtime checklist. / 两个包都需要运行中的 Sense-T server；在真实 Mac 与 Android 设备通过运行时清单前，它们保持“试用壳”状态。
+Both packages expose all three model selectors and require a matching server. They remain test shells until a real Mac, iPhone and Android device pass the runtime checklist. / 两个包都提供三个模型选择，并需要匹配的服务；在真实 Mac、iPhone 与 Android 设备通过运行时清单前，它们保持“试用壳”状态。

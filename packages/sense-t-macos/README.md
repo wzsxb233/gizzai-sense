@@ -1,23 +1,23 @@
-# Sense-T macOS test package / Sense-T macOS 试用包
+# Sense family Apple test package / Sense 系列 Apple 试用包
 
-This is a bilingual SwiftUI shell using the GizzAI design tokens and brand mark. It calls the released
-Sense-T HTTP API so you can test the UI on a Mac before native Metal packaging is validated.
+This bilingual SwiftUI test shell contains selectors for all three released models: `GizzAI-Sense-E2B`, `GizzAI-Sense-E4B`, and `GizzAI-Sense-T-E2B`. It uses the GizzAI design tokens and calls the matching HTTP endpoint. The same source opens in Xcode for macOS and iPhone targets.
 
-这是一个使用 GizzAI design tokens 与品牌标志的双语 SwiftUI 试用壳。它调用已发布的 Sense-T HTTP API，便于在 Mac 上先试用界面；原生 Metal 打包仍需在 Mac 上验证。
+这是一个双语 SwiftUI 试用壳，包含三个已发布模型：`GizzAI-Sense-E2B`、`GizzAI-Sense-E4B` 与 `GizzAI-Sense-T-E2B`。它使用 GizzAI design tokens，并调用对应 HTTP 服务；同一份源码可在 Xcode 中构建 macOS 与 iPhone 目标。
 
 ## Run / 运行
 
-1. Start the server / 启动服务:
+For Sense E2B/E4B, start the decision server / 对 Sense E2B/E4B 启动判断服务:
+
+```bash
+python demos/live_server.py --model GizzAI-Sense-E2B --port 8765
+```
+
+For Sense-T, start the time-series server / 对 Sense-T 启动时间序列服务:
 
 ```bash
 python demos/sense_t_server.py --model GizzAI-Sense-T-E2B --port 8770
 ```
 
-2. On macOS, open this folder in Xcode, or run `swift run` from Terminal. / 在 macOS 用 Xcode 打开此目录，或在终端执行 `swift run`。
+Open this folder in Xcode, choose the macOS or iPhone target, enter the endpoint, choose a model, and run a request. / 用 Xcode 打开此目录，选择 macOS 或 iPhone 目标，填写服务地址、选择模型并发起请求。
 
-3. Enter the API endpoint and press Forecast. / 填写 API 地址并点击“预测”。
-
-The sample sends `/v1/forecast` and displays the model's P10/P50/P90 response. This package is marked
-**TEST** until a real Mac build and Metal inference conformance run are recorded.
-
-示例调用 `/v1/forecast`，显示模型返回的 P10/P50/P90。完成真实 Mac 构建与 Metal 推理一致性测试并记录后，才会移除 **TEST** 标记。
+This remains a **TEST** package until real Mac, iPhone, Metal, and device conformance runs are recorded. / 在完成真实 Mac、iPhone、Metal 与设备一致性测试并记录前，本包保持 **TEST** 标记。

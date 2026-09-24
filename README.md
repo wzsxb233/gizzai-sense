@@ -131,9 +131,9 @@ The bilingual Sense-T technical report is [`docs/paper_sense_t_bilingual.md`](do
 
 ### Target-device packages / 目标设备试用包
 
-- [`packages/sense-t-macos/`](packages/sense-t-macos/) — SwiftUI bilingual macOS shell / SwiftUI 双语 macOS 试用壳
-- [`packages/sense-t-android/`](packages/sense-t-android/) — Jetpack Compose bilingual Android shell / Jetpack Compose 双语 Android 试用壳
+- [`packages/sense-t-macos/`](packages/sense-t-macos/) — SwiftUI bilingual macOS + iPhone shell with all three model selectors / SwiftUI 双语 macOS + iPhone 三模型选择试用壳
+- [`packages/sense-t-android/`](packages/sense-t-android/) — Jetpack Compose bilingual Android shell with all three model selectors / Jetpack Compose 双语 Android 三模型选择试用壳
 
 Both use the existing GizzAI design-system tokens, fonts and brand assets, and connect to the released
-Sense-T API. They require a running Sense-T server; they are test packages until the target devices pass
-runtime conformance. / 两个包都使用现有 GizzAI design system 的 token、字体和品牌资源，并连接已发布的 Sense-T API。它们需要运行中的 Sense-T server；目标设备通过运行时一致性验证前，保持为试用包。
+Sense family APIs. They require a running matching server; they are test packages until the target devices pass
+runtime conformance. / 两个包都使用现有 GizzAI design system 的 token、字体和品牌资源，并连接三个模型对应的 API。它们需要运行中的匹配服务；目标设备通过运行时一致性验证前，保持为试用包。
