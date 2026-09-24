@@ -29,9 +29,11 @@ the existing Studio repositories can be switched to that hardware without recrea
 
 ## Reproducible source / 可复现源码
 
-The bilingual Gradio source used by ModelScope is staged under `/tmp/gizzai-spaces/ms` during release
-operations. The target-device shells are versioned in [`packages/`](../packages/). They remain test shells
-until a macOS, iPhone or Android device is available for physical-device conformance checks.
+The bilingual Gradio source used by ModelScope is versioned in [`spaces/modelscope/`](../spaces/modelscope/),
+and the static HF hubs are in [`spaces/huggingface/`](../spaces/huggingface/). The target-device shells are
+versioned in [`packages/`](../packages/). They remain test shells until a macOS, iPhone or Android device
+is available for physical-device conformance checks.
 
-魔搭使用的双语 Gradio 源码在发布操作期间位于 `/tmp/gizzai-spaces/ms`。目标设备试用壳已纳入
-[`packages/`](../packages/)。在拿到 macOS、iPhone 或 Android 真机并完成一致性检查前，它们仍标记为试用壳。
+魔搭使用的双语 Gradio 源码已纳入 [`spaces/modelscope/`](../spaces/modelscope/)，HF 静态入口源码位于
+[`spaces/huggingface/`](../spaces/huggingface/)。目标设备试用壳已纳入 [`packages/`](../packages/)。在拿到
+macOS、iPhone 或 Android 真机并完成一致性检查前，它们仍标记为试用壳。
