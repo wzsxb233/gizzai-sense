@@ -1,8 +1,8 @@
 # Sense family Apple test package / Sense 系列 Apple 试用包
 
-This bilingual SwiftUI test shell contains selectors for all three released models: `GizzAI-Sense-E2B`, `GizzAI-Sense-E4B`, and `GizzAI-Sense-T-E2B`. It uses the GizzAI design tokens and calls the matching HTTP endpoint. The same source opens in Xcode for macOS and iPhone targets.
+This bilingual SwiftUI test shell contains selectors for all three released models: `GizzAI-Sense-E2B`, `GizzAI-Sense-E4B`, and `GizzAI-Sense-T-E2B`. It uses the GizzAI design tokens and calls the matching HTTP endpoint. The same source opens in Xcode for macOS and iPhone targets. It is an HTTP API test shell; it does not bundle a local MLX runtime or claim Apple Silicon conformance.
 
-这是一个双语 SwiftUI 试用壳，包含三个已发布模型：`GizzAI-Sense-E2B`、`GizzAI-Sense-E4B` 与 `GizzAI-Sense-T-E2B`。它使用 GizzAI design tokens，并调用对应 HTTP 服务；同一份源码可在 Xcode 中构建 macOS 与 iPhone 目标。
+这是一个双语 SwiftUI 试用壳，包含三个已发布模型：`GizzAI-Sense-E2B`、`GizzAI-Sense-E4B` 与 `GizzAI-Sense-T-E2B`。它使用 GizzAI design tokens，并调用对应 HTTP 服务；同一份源码可在 Xcode 中构建 macOS 与 iPhone 目标。它是 HTTP API 试用壳，不内置本地 MLX runtime，也不代表已完成 Apple Silicon 一致性验证。
 
 ## Run / 运行
 

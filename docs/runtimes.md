@@ -28,8 +28,7 @@ cmake --build build -j
 ./build/sense-t-cli --help
 ```
 
-The C++ path is the measured device core. Metal on macOS/iPhone and Vulkan/CPU on Android still need
-an on-device build and test. / C++ 路径是已经测过的设备核心；macOS/iPhone 的 Metal 与 Android 的 Vulkan/CPU 仍需要在目标设备上构建和测试。
+The C++ path is the measured device core. The Mac/iPhone package is an HTTP API shell and does not bundle MLX; Metal on macOS/iPhone and Vulkan/CPU on Android still need an on-device build and test. / C++ 路径是已经测过的设备核心；Mac/iPhone 包是 HTTP API 试用壳，不内置 MLX；macOS/iPhone 的 Metal 与 Android 的 Vulkan/CPU 仍需要在目标设备上构建和测试。
 
 ## Sense-T limits / Sense-T 限制
 
