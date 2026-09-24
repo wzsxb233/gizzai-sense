@@ -1,0 +1,6 @@
+gradio>=5.49,<6
+modelscope
+transformers>=5.17
+torch>=2.6
+safetensors
+accelerate
