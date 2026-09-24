@@ -98,3 +98,16 @@ write to dengyicun@gizzai.com. Use of the Gemma-derived weights is also subject 
 
 许可协议为 Apache 2.0 加附加条款（见 `LICENSE`）：个人、学术研究与年营收 10 万美元以下的机构可免费使用。
 商业授权、学术合作，以及高性能推理、训练与强化学习框架，请联系 dengyicun@gizzai.com。
+
+## Sense-T time-series inference
+
+The Sense-T release adds typed judgements and calibrated 10/50/90% forecasts over a time series. Its
+reference implementation is in [`sense_t.py`](sense_t.py), with the transformers remote-code adapter in
+[`modeling_sense_t.py`](modeling_sense_t.py). The open-weight model and bundled Chronos-2 encoder are
+published at [GizzAI/Gizzai-Sense-T-E2B](https://huggingface.co/GizzAI/Gizzai-Sense-T-E2B).
+
+Runtime adapters and their verification status are documented in [`docs/runtimes.md`](docs/runtimes.md).
+Transformers is verified; llama.cpp has a measured C++ path. vLLM and MLX adapters are experimental, and
+Ollama can run the GGUF but does not expose the token probabilities required for calibrated Sense output.
+Phone deployment uses the llama.cpp core; Android and iPhone packaging and device validation remain
+follow-up work.
