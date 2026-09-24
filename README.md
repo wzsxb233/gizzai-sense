@@ -105,11 +105,10 @@ write to dengyicun@gizzai.com. Use of the Gemma-derived weights is also subject 
 
 The Sense-T release adds typed judgements and calibrated 10/50/90% forecasts over a time series. Its
 reference implementation is [`sense_t.py`](sense_t.py), with the Transformers remote-code adapter in
-[`modeling_sense_t.py`](modeling_sense_t.py). The open-weight model and bundled Chronos-2 encoder are
-published at [GizzAI/Gizzai-Sense-T-E2B](https://huggingface.co/GizzAI/Gizzai-Sense-T-E2B).
+[`modeling_sense_t.py`](modeling_sense_t.py). The public checkpoint is the compensated-baked Sense-T artifact; its bundled series runtime files are published alongside it, so users do not merge a separate LoRA adapter. The model is published at [GizzAI/Gizzai-Sense-T-E2B](https://huggingface.co/GizzAI/Gizzai-Sense-T-E2B).
 
 Sense-T 在时序上增加类型化判断，以及经过校准的 10/50/90% 预测。参考实现是
-[`sense_t.py`](sense_t.py)，Transformers remote-code 适配器是 [`modeling_sense_t.py`](modeling_sense_t.py)。开放权重与内置 Chronos-2 编码器发布在
+[`sense_t.py`](sense_t.py)，Transformers remote-code 适配器是 [`modeling_sense_t.py`](modeling_sense_t.py)。公开 checkpoint 是完成 compensated bake 的 Sense-T 产物；时序运行所需文件随模型一并发布，用户无需再合并单独的 LoRA adapter。模型发布在
 [GizzAI/Gizzai-Sense-T-E2B](https://huggingface.co/GizzAI/Gizzai-Sense-T-E2B)。
 
 ### Runtime status / 运行时状态

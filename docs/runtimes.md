@@ -32,10 +32,10 @@ The C++ path is the measured device core. The Mac/iPhone package is an HTTP API 
 
 ## Sense-T limits / Sense-T 限制
 
-Sense-T sends Chronos-2 soft tokens plus a calibrated quantile head. A text-only server adapter cannot
+The public Sense-T checkpoint is the compensated-baked artifact; the series encoder, projector and quantile-head files shipped beside it are runtime assets, not a user-side merge step. Sense-T sends Chronos-2 soft tokens plus a calibrated quantile head. A text-only server adapter cannot
 be called a Sense-T implementation until it accepts that series path and returns the same forecasts.
 The current vLLM and MLX adapters are for the base text model; Sense-T on those runtimes is not claimed.
-/ Sense-T 会发送 Chronos-2 soft tokens，并使用校准的 quantile head。仅支持文本的 server adapter 在接入时序路径并返回一致预测之前，不能称为 Sense-T 实现。当前 vLLM 与 MLX adapter 针对基础文本模型，未宣称支持 Sense-T。
+/ 公开 Sense-T checkpoint 是完成 compensated bake 的产物；随模型提供的时序 encoder、projector 与 quantile-head 文件是运行时资源，不要求用户自行合并。Sense-T 会发送 Chronos-2 soft tokens，并使用校准的 quantile head。仅支持文本的 server adapter 在接入时序路径并返回一致预测之前，不能称为 Sense-T 实现。当前 vLLM 与 MLX adapter 针对基础文本模型，未宣称支持 Sense-T。
 
 ## Test packages / 试用包
 
