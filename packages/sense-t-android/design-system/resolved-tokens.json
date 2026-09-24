@@ -1,0 +1,1229 @@
+{
+  "schemaVersion": 1,
+  "generator": "scripts/export-design-tokens.mjs",
+  "generatorSha256": "12f228c6ed284e42a26b07b22cfbba4bbbe55bc6e620ebd70e8f259d6aef95c7",
+  "authority": "CSS sources own all token values; this file is a disposable read-only handoff",
+  "sources": {
+    "frontend/design-system/canonical/tokens/harness.css": {
+      "sha256": "22a5f57d73b5d171860f3aa610586fc033fa6fc7ee47c74a134a86f2533226f1",
+      "bytes": 47844
+    },
+    "frontend/design-system/product-tokens.css": {
+      "sha256": "c53b5a5f72822cce7aba3e40d53e018e08f351d2ba90b6f1dc06cec4681a0916",
+      "bytes": 10191
+    }
+  },
+  "scope": {
+    "keys": "only --gz-* keys defined by the product layer",
+    "inheritance": "resolve root first, then canonical-dark and product-dark body overrides",
+    "conditions": "default motion settings; nested conditional rules are excluded",
+    "valueSemantics": "var() substitutions only; CSS functions and units are preserved, not evaluated as browser layout"
+  },
+  "tokenCount": 150,
+  "modes": {
+    "light": {
+      "--gz-action-primary": {
+        "expression": "var(--gz-purple-600)",
+        "resolvedValue": "#6b4d91"
+      },
+      "--gz-action-primary-active": {
+        "expression": "var(--gz-purple-800)",
+        "resolvedValue": "#3e2c5a"
+      },
+      "--gz-action-primary-fg": {
+        "expression": "var(--gz-ink-0)",
+        "resolvedValue": "#ffffff"
+      },
+      "--gz-action-primary-hover": {
+        "expression": "var(--gz-purple-700)",
+        "resolvedValue": "#553c77"
+      },
+      "--gz-action-secondary": {
+        "expression": "var(--gz-ink-0)",
+        "resolvedValue": "#ffffff"
+      },
+      "--gz-action-secondary-active": {
+        "expression": "var(--gz-purple-100)",
+        "resolvedValue": "#e7dcfb"
+      },
+      "--gz-action-secondary-fg": {
+        "expression": "var(--gz-purple-700)",
+        "resolvedValue": "#553c77"
+      },
+      "--gz-action-secondary-hover": {
+        "expression": "var(--gz-purple-50)",
+        "resolvedValue": "#f4efff"
+      },
+      "--gz-bg": {
+        "expression": "var(--gz-porcelain)",
+        "resolvedValue": "#f7f5f2"
+      },
+      "--gz-bg-alt": {
+        "expression": "var(--gz-ink-0)",
+        "resolvedValue": "#ffffff"
+      },
+      "--gz-bg-inverse": {
+        "expression": "var(--gz-purple-900)",
+        "resolvedValue": "#261a3d"
+      },
+      "--gz-bg-raised": {
+        "expression": "var(--gz-ink-0)",
+        "resolvedValue": "#ffffff"
+      },
+      "--gz-bg-sunken": {
+        "expression": "var(--gz-ink-100)",
+        "resolvedValue": "#f2f0ec"
+      },
+      "--gz-border": {
+        "expression": "var(--gz-ink-200)",
+        "resolvedValue": "#e6e3dd"
+      },
+      "--gz-border-brand": {
+        "expression": "var(--gz-purple-200)",
+        "resolvedValue": "#cfb8f3"
+      },
+      "--gz-border-strong": {
+        "expression": "var(--gz-ink-300)",
+        "resolvedValue": "#d3cfc7"
+      },
+      "--gz-brand": {
+        "expression": "var(--gz-purple-600)",
+        "resolvedValue": "#6b4d91"
+      },
+      "--gz-brand-fg": {
+        "expression": "var(--gz-ink-0)",
+        "resolvedValue": "#ffffff"
+      },
+      "--gz-brand-soft": {
+        "expression": "var(--gz-purple-50)",
+        "resolvedValue": "#f4efff"
+      },
+      "--gz-brand-strong": {
+        "expression": "var(--gz-purple-700)",
+        "resolvedValue": "#553c77"
+      },
+      "--gz-composer-max": {
+        "expression": "52rem",
+        "resolvedValue": "52rem"
+      },
+      "--gz-content-readable": {
+        "expression": "44rem",
+        "resolvedValue": "44rem"
+      },
+      "--gz-content-wide": {
+        "expression": "75rem",
+        "resolvedValue": "75rem"
+      },
+      "--gz-control-bg": {
+        "expression": "var(--gz-ink-0)",
+        "resolvedValue": "#ffffff"
+      },
+      "--gz-control-border": {
+        "expression": "var(--gz-ink-500)",
+        "resolvedValue": "#6e695f"
+      },
+      "--gz-control-border-hover": {
+        "expression": "var(--gz-purple-600)",
+        "resolvedValue": "#6b4d91"
+      },
+      "--gz-control-placeholder": {
+        "expression": "var(--gz-ink-500)",
+        "resolvedValue": "#6e695f"
+      },
+      "--gz-control-size-lg": {
+        "expression": "3rem",
+        "resolvedValue": "3rem"
+      },
+      "--gz-control-size-md": {
+        "expression": "2.75rem",
+        "resolvedValue": "2.75rem"
+      },
+      "--gz-control-size-sm": {
+        "expression": "2rem",
+        "resolvedValue": "2rem"
+      },
+      "--gz-correct": {
+        "expression": "var(--gz-success)",
+        "resolvedValue": "#16704a"
+      },
+      "--gz-danger": {
+        "expression": "#b72d3e",
+        "resolvedValue": "#b72d3e"
+      },
+      "--gz-danger-soft": {
+        "expression": "#fdeaea",
+        "resolvedValue": "#fdeaea"
+      },
+      "--gz-disabled-bg": {
+        "expression": "var(--gz-ink-100)",
+        "resolvedValue": "#f2f0ec"
+      },
+      "--gz-disabled-border": {
+        "expression": "var(--gz-ink-200)",
+        "resolvedValue": "#e6e3dd"
+      },
+      "--gz-disabled-fg": {
+        "expression": "var(--gz-ink-500)",
+        "resolvedValue": "#6e695f"
+      },
+      "--gz-divider": {
+        "expression": "var(--gz-ink-200)",
+        "resolvedValue": "#e6e3dd"
+      },
+      "--gz-dur-base": {
+        "expression": "180ms",
+        "resolvedValue": "180ms"
+      },
+      "--gz-dur-fast": {
+        "expression": "120ms",
+        "resolvedValue": "120ms"
+      },
+      "--gz-dur-slow": {
+        "expression": "280ms",
+        "resolvedValue": "280ms"
+      },
+      "--gz-ease-in": {
+        "expression": "cubic-bezier(.4, 0, 1, 1)",
+        "resolvedValue": "cubic-bezier(.4, 0, 1, 1)"
+      },
+      "--gz-ease-inout": {
+        "expression": "cubic-bezier(.4, 0, .2, 1)",
+        "resolvedValue": "cubic-bezier(.4, 0, .2, 1)"
+      },
+      "--gz-ease-out": {
+        "expression": "cubic-bezier(.2, 0, 0, 1)",
+        "resolvedValue": "cubic-bezier(.2, 0, 0, 1)"
+      },
+      "--gz-features-brand": {
+        "expression": "\"cv11\" 1, \"ss03\" 1",
+        "resolvedValue": "\"cv11\" 1, \"ss03\" 1"
+      },
+      "--gz-fg": {
+        "expression": "var(--gz-ink-800)",
+        "resolvedValue": "#29251f"
+      },
+      "--gz-fg-faint": {
+        "expression": "var(--gz-ink-500)",
+        "resolvedValue": "#6e695f"
+      },
+      "--gz-fg-muted": {
+        "expression": "var(--gz-ink-600)",
+        "resolvedValue": "#5a554c"
+      },
+      "--gz-fg-on-brand": {
+        "expression": "var(--gz-ink-0)",
+        "resolvedValue": "#ffffff"
+      },
+      "--gz-fg-subtle": {
+        "expression": "var(--gz-ink-500)",
+        "resolvedValue": "#6e695f"
+      },
+      "--gz-focus-color": {
+        "expression": "var(--gz-purple-600)",
+        "resolvedValue": "#6b4d91"
+      },
+      "--gz-focus-offset": {
+        "expression": "3px",
+        "resolvedValue": "3px"
+      },
+      "--gz-focus-ring": {
+        "expression": "0 0 0 3px var(--gz-purple-200)",
+        "resolvedValue": "0 0 0 3px #cfb8f3"
+      },
+      "--gz-focus-width": {
+        "expression": "3px",
+        "resolvedValue": "3px"
+      },
+      "--gz-font-arabic": {
+        "expression": "\"GizzAI Arabic\", \"GizzAI Sans\", \"Segoe UI\", sans-serif",
+        "resolvedValue": "\"GizzAI Arabic\", \"GizzAI Sans\", \"Segoe UI\", sans-serif"
+      },
+      "--gz-font-brand": {
+        "expression": "var(--gz-font-sans)",
+        "resolvedValue": "\"GizzAI Sans\", \"GizzAI Arabic\", \"GizzAI Devanagari\", \"GizzAI Thai\", \"GizzAI Hebrew\", \"GizzAI Han\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif"
+      },
+      "--gz-font-devanagari": {
+        "expression": "\"GizzAI Devanagari\", \"GizzAI Sans\", \"Nirmala UI\", sans-serif",
+        "resolvedValue": "\"GizzAI Devanagari\", \"GizzAI Sans\", \"Nirmala UI\", sans-serif"
+      },
+      "--gz-font-display": {
+        "expression": "var(--gz-font-sans)",
+        "resolvedValue": "\"GizzAI Sans\", \"GizzAI Arabic\", \"GizzAI Devanagari\", \"GizzAI Thai\", \"GizzAI Hebrew\", \"GizzAI Han\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif"
+      },
+      "--gz-font-global": {
+        "expression": "\"GizzAI Sans\", \"GizzAI Arabic\", \"GizzAI Devanagari\", \"GizzAI Thai\", \"GizzAI Hebrew\", \"GizzAI Han\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+        "resolvedValue": "\"GizzAI Sans\", \"GizzAI Arabic\", \"GizzAI Devanagari\", \"GizzAI Thai\", \"GizzAI Hebrew\", \"GizzAI Han\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif"
+      },
+      "--gz-font-hant": {
+        "expression": "\"GizzAI Sans\", \"PingFang TC\", \"Microsoft JhengHei\", \"Noto Sans CJK TC\", \"Noto Sans TC\", sans-serif",
+        "resolvedValue": "\"GizzAI Sans\", \"PingFang TC\", \"Microsoft JhengHei\", \"Noto Sans CJK TC\", \"Noto Sans TC\", sans-serif"
+      },
+      "--gz-font-hebrew": {
+        "expression": "\"GizzAI Hebrew\", \"GizzAI Sans\", \"Segoe UI\", sans-serif",
+        "resolvedValue": "\"GizzAI Hebrew\", \"GizzAI Sans\", \"Segoe UI\", sans-serif"
+      },
+      "--gz-font-ja": {
+        "expression": "\"GizzAI Sans\", \"Hiragino Kaku Gothic ProN\", \"Yu Gothic UI\", \"Yu Gothic\", \"Meiryo\", \"Noto Sans CJK JP\", \"Noto Sans JP\", sans-serif",
+        "resolvedValue": "\"GizzAI Sans\", \"Hiragino Kaku Gothic ProN\", \"Yu Gothic UI\", \"Yu Gothic\", \"Meiryo\", \"Noto Sans CJK JP\", \"Noto Sans JP\", sans-serif"
+      },
+      "--gz-font-ko": {
+        "expression": "\"GizzAI Sans\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", \"Noto Sans CJK KR\", \"Noto Sans KR\", sans-serif",
+        "resolvedValue": "\"GizzAI Sans\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", \"Noto Sans CJK KR\", \"Noto Sans KR\", sans-serif"
+      },
+      "--gz-font-mono": {
+        "expression": "\"SFMono-Regular\", Consolas, \"Liberation Mono\", monospace",
+        "resolvedValue": "\"SFMono-Regular\", Consolas, \"Liberation Mono\", monospace"
+      },
+      "--gz-font-sans": {
+        "expression": "var(--gz-font-global)",
+        "resolvedValue": "\"GizzAI Sans\", \"GizzAI Arabic\", \"GizzAI Devanagari\", \"GizzAI Thai\", \"GizzAI Hebrew\", \"GizzAI Han\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif"
+      },
+      "--gz-font-sc": {
+        "expression": "\"GizzAI Han\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", var(--gz-font-sans)",
+        "resolvedValue": "\"GizzAI Han\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", \"GizzAI Sans\", \"GizzAI Arabic\", \"GizzAI Devanagari\", \"GizzAI Thai\", \"GizzAI Hebrew\", \"GizzAI Han\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif"
+      },
+      "--gz-font-thai": {
+        "expression": "\"GizzAI Thai\", \"GizzAI Sans\", \"Leelawadee UI\", sans-serif",
+        "resolvedValue": "\"GizzAI Thai\", \"GizzAI Sans\", \"Leelawadee UI\", sans-serif"
+      },
+      "--gz-fw-black": {
+        "expression": "800",
+        "resolvedValue": "800"
+      },
+      "--gz-fw-bold": {
+        "expression": "700",
+        "resolvedValue": "700"
+      },
+      "--gz-fw-medium": {
+        "expression": "500",
+        "resolvedValue": "500"
+      },
+      "--gz-fw-regular": {
+        "expression": "400",
+        "resolvedValue": "400"
+      },
+      "--gz-fw-semibold": {
+        "expression": "600",
+        "resolvedValue": "600"
+      },
+      "--gz-heading": {
+        "expression": "var(--gz-purple-950)",
+        "resolvedValue": "#140a24"
+      },
+      "--gz-hit-target-min": {
+        "expression": "2.75rem",
+        "resolvedValue": "2.75rem"
+      },
+      "--gz-icon-size-lg": {
+        "expression": "1.5rem",
+        "resolvedValue": "1.5rem"
+      },
+      "--gz-icon-size-md": {
+        "expression": "1.25rem",
+        "resolvedValue": "1.25rem"
+      },
+      "--gz-icon-size-sm": {
+        "expression": "1rem",
+        "resolvedValue": "1rem"
+      },
+      "--gz-icon-size-xs": {
+        "expression": ".875rem",
+        "resolvedValue": ".875rem"
+      },
+      "--gz-incorrect": {
+        "expression": "var(--gz-danger)",
+        "resolvedValue": "#b72d3e"
+      },
+      "--gz-info": {
+        "expression": "var(--gz-purple-700)",
+        "resolvedValue": "#553c77"
+      },
+      "--gz-info-soft": {
+        "expression": "var(--gz-purple-50)",
+        "resolvedValue": "#f4efff"
+      },
+      "--gz-lh-normal": {
+        "expression": "1.5",
+        "resolvedValue": "1.5"
+      },
+      "--gz-lh-reading": {
+        "expression": "1.8",
+        "resolvedValue": "1.8"
+      },
+      "--gz-lh-relaxed": {
+        "expression": "1.7",
+        "resolvedValue": "1.7"
+      },
+      "--gz-lh-snug": {
+        "expression": "1.3",
+        "resolvedValue": "1.3"
+      },
+      "--gz-lh-tight": {
+        "expression": "1.12",
+        "resolvedValue": "1.12"
+      },
+      "--gz-link": {
+        "expression": "var(--gz-purple-700)",
+        "resolvedValue": "#553c77"
+      },
+      "--gz-link-hover": {
+        "expression": "var(--gz-purple-800)",
+        "resolvedValue": "#3e2c5a"
+      },
+      "--gz-radius-lg": {
+        "expression": "16px",
+        "resolvedValue": "16px"
+      },
+      "--gz-radius-md": {
+        "expression": "12px",
+        "resolvedValue": "12px"
+      },
+      "--gz-radius-pill": {
+        "expression": "999px",
+        "resolvedValue": "999px"
+      },
+      "--gz-radius-sm": {
+        "expression": "8px",
+        "resolvedValue": "8px"
+      },
+      "--gz-radius-xl": {
+        "expression": "24px",
+        "resolvedValue": "24px"
+      },
+      "--gz-radius-xs": {
+        "expression": "4px",
+        "resolvedValue": "4px"
+      },
+      "--gz-selection-bg": {
+        "expression": "var(--gz-purple-100)",
+        "resolvedValue": "#e7dcfb"
+      },
+      "--gz-selection-fg": {
+        "expression": "var(--gz-purple-900)",
+        "resolvedValue": "#261a3d"
+      },
+      "--gz-shadow-brand": {
+        "expression": "0 8px 24px -8px rgba(107, 77, 145, .3)",
+        "resolvedValue": "0 8px 24px -8px rgba(107, 77, 145, .3)"
+      },
+      "--gz-shadow-lg": {
+        "expression": "0 20px 48px -12px rgba(38, 26, 61, .2), 0 4px 12px rgba(38, 26, 61, .06)",
+        "resolvedValue": "0 20px 48px -12px rgba(38, 26, 61, .2), 0 4px 12px rgba(38, 26, 61, .06)"
+      },
+      "--gz-shadow-md": {
+        "expression": "0 8px 24px -8px rgba(38, 26, 61, .14), 0 2px 6px rgba(38, 26, 61, .04)",
+        "resolvedValue": "0 8px 24px -8px rgba(38, 26, 61, .14), 0 2px 6px rgba(38, 26, 61, .04)"
+      },
+      "--gz-shadow-sm": {
+        "expression": "0 2px 8px -2px rgba(38, 26, 61, .08)",
+        "resolvedValue": "0 2px 8px -2px rgba(38, 26, 61, .08)"
+      },
+      "--gz-shadow-xs": {
+        "expression": "0 1px 2px rgba(38, 26, 61, .04)",
+        "resolvedValue": "0 1px 2px rgba(38, 26, 61, .04)"
+      },
+      "--gz-sidebar-width": {
+        "expression": "17.5rem",
+        "resolvedValue": "17.5rem"
+      },
+      "--gz-sp-0": {
+        "expression": "0",
+        "resolvedValue": "0"
+      },
+      "--gz-sp-1": {
+        "expression": ".25rem",
+        "resolvedValue": ".25rem"
+      },
+      "--gz-sp-10": {
+        "expression": "2.5rem",
+        "resolvedValue": "2.5rem"
+      },
+      "--gz-sp-12": {
+        "expression": "3rem",
+        "resolvedValue": "3rem"
+      },
+      "--gz-sp-16": {
+        "expression": "4rem",
+        "resolvedValue": "4rem"
+      },
+      "--gz-sp-2": {
+        "expression": ".5rem",
+        "resolvedValue": ".5rem"
+      },
+      "--gz-sp-20": {
+        "expression": "5rem",
+        "resolvedValue": "5rem"
+      },
+      "--gz-sp-24": {
+        "expression": "6rem",
+        "resolvedValue": "6rem"
+      },
+      "--gz-sp-3": {
+        "expression": ".75rem",
+        "resolvedValue": ".75rem"
+      },
+      "--gz-sp-4": {
+        "expression": "1rem",
+        "resolvedValue": "1rem"
+      },
+      "--gz-sp-5": {
+        "expression": "1.25rem",
+        "resolvedValue": "1.25rem"
+      },
+      "--gz-sp-6": {
+        "expression": "1.5rem",
+        "resolvedValue": "1.5rem"
+      },
+      "--gz-sp-8": {
+        "expression": "2rem",
+        "resolvedValue": "2rem"
+      },
+      "--gz-success": {
+        "expression": "#16704a",
+        "resolvedValue": "#16704a"
+      },
+      "--gz-success-soft": {
+        "expression": "#e5f6ee",
+        "resolvedValue": "#e5f6ee"
+      },
+      "--gz-surface-canvas": {
+        "expression": "var(--gz-porcelain)",
+        "resolvedValue": "#f7f5f2"
+      },
+      "--gz-surface-floating": {
+        "expression": "var(--gz-ink-0)",
+        "resolvedValue": "#ffffff"
+      },
+      "--gz-surface-interactive": {
+        "expression": "var(--gz-ink-100)",
+        "resolvedValue": "#f2f0ec"
+      },
+      "--gz-surface-panel": {
+        "expression": "var(--gz-ink-0)",
+        "resolvedValue": "#ffffff"
+      },
+      "--gz-surface-sidebar": {
+        "expression": "var(--gz-ink-50)",
+        "resolvedValue": "#faf9f7"
+      },
+      "--gz-tone-accent-fg": {
+        "expression": "var(--gz-yellow-700)",
+        "resolvedValue": "#8a6108"
+      },
+      "--gz-tone-brand-bg": {
+        "expression": "var(--gz-purple-50)",
+        "resolvedValue": "#f4efff"
+      },
+      "--gz-tone-brand-bg-strong": {
+        "expression": "var(--gz-purple-100)",
+        "resolvedValue": "#e7dcfb"
+      },
+      "--gz-tone-brand-fg": {
+        "expression": "var(--gz-purple-700)",
+        "resolvedValue": "#553c77"
+      },
+      "--gz-tone-brand-fg-muted": {
+        "expression": "var(--gz-purple-600)",
+        "resolvedValue": "#6b4d91"
+      },
+      "--gz-tone-brand-fg-strong": {
+        "expression": "var(--gz-purple-800)",
+        "resolvedValue": "#3e2c5a"
+      },
+      "--gz-tone-brand-solid": {
+        "expression": "var(--gz-purple-600)",
+        "resolvedValue": "#6b4d91"
+      },
+      "--gz-tone-brand-solid-muted": {
+        "expression": "var(--gz-purple-500)",
+        "resolvedValue": "#7f5fa6"
+      },
+      "--gz-tone-warm-fg": {
+        "expression": "var(--gz-orange-600)",
+        "resolvedValue": "#b8500a"
+      },
+      "--gz-tooltip-bg": {
+        "expression": "var(--gz-purple-900)",
+        "resolvedValue": "#261a3d"
+      },
+      "--gz-tooltip-fg": {
+        "expression": "var(--gz-ink-0)",
+        "resolvedValue": "#ffffff"
+      },
+      "--gz-tracking-caps": {
+        "expression": ".1em",
+        "resolvedValue": ".1em"
+      },
+      "--gz-tracking-display": {
+        "expression": "-.045em",
+        "resolvedValue": "-.045em"
+      },
+      "--gz-tracking-normal": {
+        "expression": "0",
+        "resolvedValue": "0"
+      },
+      "--gz-tracking-tight": {
+        "expression": "-.025em",
+        "resolvedValue": "-.025em"
+      },
+      "--gz-tracking-wide": {
+        "expression": ".025em",
+        "resolvedValue": ".025em"
+      },
+      "--gz-type-body": {
+        "expression": "1rem",
+        "resolvedValue": "1rem"
+      },
+      "--gz-type-body-lg": {
+        "expression": "1.125rem",
+        "resolvedValue": "1.125rem"
+      },
+      "--gz-type-body-sm": {
+        "expression": ".875rem",
+        "resolvedValue": ".875rem"
+      },
+      "--gz-type-caption": {
+        "expression": ".75rem",
+        "resolvedValue": ".75rem"
+      },
+      "--gz-type-code": {
+        "expression": ".8125rem",
+        "resolvedValue": ".8125rem"
+      },
+      "--gz-type-display": {
+        "expression": "clamp(2.75rem, 5vw, 4.5rem)",
+        "resolvedValue": "clamp(2.75rem, 5vw, 4.5rem)"
+      },
+      "--gz-type-h1": {
+        "expression": "2.5rem",
+        "resolvedValue": "2.5rem"
+      },
+      "--gz-type-h2": {
+        "expression": "2rem",
+        "resolvedValue": "2rem"
+      },
+      "--gz-type-h3": {
+        "expression": "1.5rem",
+        "resolvedValue": "1.5rem"
+      },
+      "--gz-type-h4": {
+        "expression": "1.125rem",
+        "resolvedValue": "1.125rem"
+      },
+      "--gz-type-label": {
+        "expression": ".875rem",
+        "resolvedValue": ".875rem"
+      },
+      "--gz-warning": {
+        "expression": "var(--gz-yellow-700)",
+        "resolvedValue": "#8a6108"
+      },
+      "--gz-warning-soft": {
+        "expression": "var(--gz-yellow-50)",
+        "resolvedValue": "#fffbe8"
+      }
+    },
+    "dark": {
+      "--gz-action-primary": {
+        "expression": "var(--gz-purple-300)",
+        "resolvedValue": "#b594e8"
+      },
+      "--gz-action-primary-active": {
+        "expression": "var(--gz-purple-100)",
+        "resolvedValue": "#e7dcfb"
+      },
+      "--gz-action-primary-fg": {
+        "expression": "var(--gz-purple-950)",
+        "resolvedValue": "#140a24"
+      },
+      "--gz-action-primary-hover": {
+        "expression": "var(--gz-purple-200)",
+        "resolvedValue": "#cfb8f3"
+      },
+      "--gz-action-secondary": {
+        "expression": "var(--gz-purple-900)",
+        "resolvedValue": "#261a3d"
+      },
+      "--gz-action-secondary-active": {
+        "expression": "var(--gz-purple-700)",
+        "resolvedValue": "#553c77"
+      },
+      "--gz-action-secondary-fg": {
+        "expression": "var(--gz-purple-100)",
+        "resolvedValue": "#e7dcfb"
+      },
+      "--gz-action-secondary-hover": {
+        "expression": "var(--gz-purple-800)",
+        "resolvedValue": "#3e2c5a"
+      },
+      "--gz-bg": {
+        "expression": "var(--gz-purple-950)",
+        "resolvedValue": "#140a24"
+      },
+      "--gz-bg-alt": {
+        "expression": "var(--gz-purple-900)",
+        "resolvedValue": "#261a3d"
+      },
+      "--gz-bg-inverse": {
+        "expression": "var(--gz-porcelain)",
+        "resolvedValue": "#f7f5f2"
+      },
+      "--gz-bg-raised": {
+        "expression": "var(--gz-purple-800)",
+        "resolvedValue": "#3e2c5a"
+      },
+      "--gz-bg-sunken": {
+        "expression": "#0e0617",
+        "resolvedValue": "#0e0617"
+      },
+      "--gz-border": {
+        "expression": "#493856",
+        "resolvedValue": "#493856"
+      },
+      "--gz-border-brand": {
+        "expression": "var(--gz-purple-500)",
+        "resolvedValue": "#7f5fa6"
+      },
+      "--gz-border-strong": {
+        "expression": "#705780",
+        "resolvedValue": "#705780"
+      },
+      "--gz-brand": {
+        "expression": "var(--gz-purple-300)",
+        "resolvedValue": "#b594e8"
+      },
+      "--gz-brand-fg": {
+        "expression": "var(--gz-purple-950)",
+        "resolvedValue": "#140a24"
+      },
+      "--gz-brand-soft": {
+        "expression": "var(--gz-purple-900)",
+        "resolvedValue": "#261a3d"
+      },
+      "--gz-brand-strong": {
+        "expression": "var(--gz-purple-200)",
+        "resolvedValue": "#cfb8f3"
+      },
+      "--gz-composer-max": {
+        "expression": "52rem",
+        "resolvedValue": "52rem"
+      },
+      "--gz-content-readable": {
+        "expression": "44rem",
+        "resolvedValue": "44rem"
+      },
+      "--gz-content-wide": {
+        "expression": "75rem",
+        "resolvedValue": "75rem"
+      },
+      "--gz-control-bg": {
+        "expression": "var(--gz-purple-950)",
+        "resolvedValue": "#140a24"
+      },
+      "--gz-control-border": {
+        "expression": "var(--gz-purple-300)",
+        "resolvedValue": "#b594e8"
+      },
+      "--gz-control-border-hover": {
+        "expression": "var(--gz-purple-200)",
+        "resolvedValue": "#cfb8f3"
+      },
+      "--gz-control-placeholder": {
+        "expression": "var(--gz-purple-300)",
+        "resolvedValue": "#b594e8"
+      },
+      "--gz-control-size-lg": {
+        "expression": "3rem",
+        "resolvedValue": "3rem"
+      },
+      "--gz-control-size-md": {
+        "expression": "2.75rem",
+        "resolvedValue": "2.75rem"
+      },
+      "--gz-control-size-sm": {
+        "expression": "2rem",
+        "resolvedValue": "2rem"
+      },
+      "--gz-correct": {
+        "expression": "var(--gz-success)",
+        "resolvedValue": "#78d9a8"
+      },
+      "--gz-danger": {
+        "expression": "#ffa7b2",
+        "resolvedValue": "#ffa7b2"
+      },
+      "--gz-danger-soft": {
+        "expression": "#3a202c",
+        "resolvedValue": "#3a202c"
+      },
+      "--gz-disabled-bg": {
+        "expression": "#302340",
+        "resolvedValue": "#302340"
+      },
+      "--gz-disabled-border": {
+        "expression": "#493856",
+        "resolvedValue": "#493856"
+      },
+      "--gz-disabled-fg": {
+        "expression": "#b9adc8",
+        "resolvedValue": "#b9adc8"
+      },
+      "--gz-divider": {
+        "expression": "#493856",
+        "resolvedValue": "#493856"
+      },
+      "--gz-dur-base": {
+        "expression": "180ms",
+        "resolvedValue": "180ms"
+      },
+      "--gz-dur-fast": {
+        "expression": "120ms",
+        "resolvedValue": "120ms"
+      },
+      "--gz-dur-slow": {
+        "expression": "280ms",
+        "resolvedValue": "280ms"
+      },
+      "--gz-ease-in": {
+        "expression": "cubic-bezier(.4, 0, 1, 1)",
+        "resolvedValue": "cubic-bezier(.4, 0, 1, 1)"
+      },
+      "--gz-ease-inout": {
+        "expression": "cubic-bezier(.4, 0, .2, 1)",
+        "resolvedValue": "cubic-bezier(.4, 0, .2, 1)"
+      },
+      "--gz-ease-out": {
+        "expression": "cubic-bezier(.2, 0, 0, 1)",
+        "resolvedValue": "cubic-bezier(.2, 0, 0, 1)"
+      },
+      "--gz-features-brand": {
+        "expression": "\"cv11\" 1, \"ss03\" 1",
+        "resolvedValue": "\"cv11\" 1, \"ss03\" 1"
+      },
+      "--gz-fg": {
+        "expression": "var(--gz-porcelain)",
+        "resolvedValue": "#f7f5f2"
+      },
+      "--gz-fg-faint": {
+        "expression": "var(--gz-purple-300)",
+        "resolvedValue": "#b594e8"
+      },
+      "--gz-fg-muted": {
+        "expression": "#d8cfe6",
+        "resolvedValue": "#d8cfe6"
+      },
+      "--gz-fg-on-brand": {
+        "expression": "var(--gz-purple-950)",
+        "resolvedValue": "#140a24"
+      },
+      "--gz-fg-subtle": {
+        "expression": "var(--gz-purple-200)",
+        "resolvedValue": "#cfb8f3"
+      },
+      "--gz-focus-color": {
+        "expression": "var(--gz-purple-200)",
+        "resolvedValue": "#cfb8f3"
+      },
+      "--gz-focus-offset": {
+        "expression": "3px",
+        "resolvedValue": "3px"
+      },
+      "--gz-focus-ring": {
+        "expression": "0 0 0 3px var(--gz-purple-600)",
+        "resolvedValue": "0 0 0 3px #6b4d91"
+      },
+      "--gz-focus-width": {
+        "expression": "3px",
+        "resolvedValue": "3px"
+      },
+      "--gz-font-arabic": {
+        "expression": "\"GizzAI Arabic\", \"GizzAI Sans\", \"Segoe UI\", sans-serif",
+        "resolvedValue": "\"GizzAI Arabic\", \"GizzAI Sans\", \"Segoe UI\", sans-serif"
+      },
+      "--gz-font-brand": {
+        "expression": "var(--gz-font-sans)",
+        "resolvedValue": "\"GizzAI Sans\", \"GizzAI Arabic\", \"GizzAI Devanagari\", \"GizzAI Thai\", \"GizzAI Hebrew\", \"GizzAI Han\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif"
+      },
+      "--gz-font-devanagari": {
+        "expression": "\"GizzAI Devanagari\", \"GizzAI Sans\", \"Nirmala UI\", sans-serif",
+        "resolvedValue": "\"GizzAI Devanagari\", \"GizzAI Sans\", \"Nirmala UI\", sans-serif"
+      },
+      "--gz-font-display": {
+        "expression": "var(--gz-font-sans)",
+        "resolvedValue": "\"GizzAI Sans\", \"GizzAI Arabic\", \"GizzAI Devanagari\", \"GizzAI Thai\", \"GizzAI Hebrew\", \"GizzAI Han\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif"
+      },
+      "--gz-font-global": {
+        "expression": "\"GizzAI Sans\", \"GizzAI Arabic\", \"GizzAI Devanagari\", \"GizzAI Thai\", \"GizzAI Hebrew\", \"GizzAI Han\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+        "resolvedValue": "\"GizzAI Sans\", \"GizzAI Arabic\", \"GizzAI Devanagari\", \"GizzAI Thai\", \"GizzAI Hebrew\", \"GizzAI Han\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif"
+      },
+      "--gz-font-hant": {
+        "expression": "\"GizzAI Sans\", \"PingFang TC\", \"Microsoft JhengHei\", \"Noto Sans CJK TC\", \"Noto Sans TC\", sans-serif",
+        "resolvedValue": "\"GizzAI Sans\", \"PingFang TC\", \"Microsoft JhengHei\", \"Noto Sans CJK TC\", \"Noto Sans TC\", sans-serif"
+      },
+      "--gz-font-hebrew": {
+        "expression": "\"GizzAI Hebrew\", \"GizzAI Sans\", \"Segoe UI\", sans-serif",
+        "resolvedValue": "\"GizzAI Hebrew\", \"GizzAI Sans\", \"Segoe UI\", sans-serif"
+      },
+      "--gz-font-ja": {
+        "expression": "\"GizzAI Sans\", \"Hiragino Kaku Gothic ProN\", \"Yu Gothic UI\", \"Yu Gothic\", \"Meiryo\", \"Noto Sans CJK JP\", \"Noto Sans JP\", sans-serif",
+        "resolvedValue": "\"GizzAI Sans\", \"Hiragino Kaku Gothic ProN\", \"Yu Gothic UI\", \"Yu Gothic\", \"Meiryo\", \"Noto Sans CJK JP\", \"Noto Sans JP\", sans-serif"
+      },
+      "--gz-font-ko": {
+        "expression": "\"GizzAI Sans\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", \"Noto Sans CJK KR\", \"Noto Sans KR\", sans-serif",
+        "resolvedValue": "\"GizzAI Sans\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", \"Noto Sans CJK KR\", \"Noto Sans KR\", sans-serif"
+      },
+      "--gz-font-mono": {
+        "expression": "\"SFMono-Regular\", Consolas, \"Liberation Mono\", monospace",
+        "resolvedValue": "\"SFMono-Regular\", Consolas, \"Liberation Mono\", monospace"
+      },
+      "--gz-font-sans": {
+        "expression": "var(--gz-font-global)",
+        "resolvedValue": "\"GizzAI Sans\", \"GizzAI Arabic\", \"GizzAI Devanagari\", \"GizzAI Thai\", \"GizzAI Hebrew\", \"GizzAI Han\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif"
+      },
+      "--gz-font-sc": {
+        "expression": "\"GizzAI Han\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", var(--gz-font-sans)",
+        "resolvedValue": "\"GizzAI Han\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", \"GizzAI Sans\", \"GizzAI Arabic\", \"GizzAI Devanagari\", \"GizzAI Thai\", \"GizzAI Hebrew\", \"GizzAI Han\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif"
+      },
+      "--gz-font-thai": {
+        "expression": "\"GizzAI Thai\", \"GizzAI Sans\", \"Leelawadee UI\", sans-serif",
+        "resolvedValue": "\"GizzAI Thai\", \"GizzAI Sans\", \"Leelawadee UI\", sans-serif"
+      },
+      "--gz-fw-black": {
+        "expression": "800",
+        "resolvedValue": "800"
+      },
+      "--gz-fw-bold": {
+        "expression": "700",
+        "resolvedValue": "700"
+      },
+      "--gz-fw-medium": {
+        "expression": "500",
+        "resolvedValue": "500"
+      },
+      "--gz-fw-regular": {
+        "expression": "400",
+        "resolvedValue": "400"
+      },
+      "--gz-fw-semibold": {
+        "expression": "600",
+        "resolvedValue": "600"
+      },
+      "--gz-heading": {
+        "expression": "var(--gz-porcelain)",
+        "resolvedValue": "#f7f5f2"
+      },
+      "--gz-hit-target-min": {
+        "expression": "2.75rem",
+        "resolvedValue": "2.75rem"
+      },
+      "--gz-icon-size-lg": {
+        "expression": "1.5rem",
+        "resolvedValue": "1.5rem"
+      },
+      "--gz-icon-size-md": {
+        "expression": "1.25rem",
+        "resolvedValue": "1.25rem"
+      },
+      "--gz-icon-size-sm": {
+        "expression": "1rem",
+        "resolvedValue": "1rem"
+      },
+      "--gz-icon-size-xs": {
+        "expression": ".875rem",
+        "resolvedValue": ".875rem"
+      },
+      "--gz-incorrect": {
+        "expression": "var(--gz-danger)",
+        "resolvedValue": "#ffa7b2"
+      },
+      "--gz-info": {
+        "expression": "var(--gz-purple-200)",
+        "resolvedValue": "#cfb8f3"
+      },
+      "--gz-info-soft": {
+        "expression": "var(--gz-purple-900)",
+        "resolvedValue": "#261a3d"
+      },
+      "--gz-lh-normal": {
+        "expression": "1.5",
+        "resolvedValue": "1.5"
+      },
+      "--gz-lh-reading": {
+        "expression": "1.8",
+        "resolvedValue": "1.8"
+      },
+      "--gz-lh-relaxed": {
+        "expression": "1.7",
+        "resolvedValue": "1.7"
+      },
+      "--gz-lh-snug": {
+        "expression": "1.3",
+        "resolvedValue": "1.3"
+      },
+      "--gz-lh-tight": {
+        "expression": "1.12",
+        "resolvedValue": "1.12"
+      },
+      "--gz-link": {
+        "expression": "var(--gz-purple-200)",
+        "resolvedValue": "#cfb8f3"
+      },
+      "--gz-link-hover": {
+        "expression": "var(--gz-purple-100)",
+        "resolvedValue": "#e7dcfb"
+      },
+      "--gz-radius-lg": {
+        "expression": "16px",
+        "resolvedValue": "16px"
+      },
+      "--gz-radius-md": {
+        "expression": "12px",
+        "resolvedValue": "12px"
+      },
+      "--gz-radius-pill": {
+        "expression": "999px",
+        "resolvedValue": "999px"
+      },
+      "--gz-radius-sm": {
+        "expression": "8px",
+        "resolvedValue": "8px"
+      },
+      "--gz-radius-xl": {
+        "expression": "24px",
+        "resolvedValue": "24px"
+      },
+      "--gz-radius-xs": {
+        "expression": "4px",
+        "resolvedValue": "4px"
+      },
+      "--gz-selection-bg": {
+        "expression": "var(--gz-purple-700)",
+        "resolvedValue": "#553c77"
+      },
+      "--gz-selection-fg": {
+        "expression": "var(--gz-porcelain)",
+        "resolvedValue": "#f7f5f2"
+      },
+      "--gz-shadow-brand": {
+        "expression": "0 8px 24px -8px rgba(0, 0, 0, .4)",
+        "resolvedValue": "0 8px 24px -8px rgba(0, 0, 0, .4)"
+      },
+      "--gz-shadow-lg": {
+        "expression": "0 20px 48px -12px rgba(0, 0, 0, .5), 0 4px 12px rgba(0, 0, 0, .3)",
+        "resolvedValue": "0 20px 48px -12px rgba(0, 0, 0, .5), 0 4px 12px rgba(0, 0, 0, .3)"
+      },
+      "--gz-shadow-md": {
+        "expression": "0 8px 24px -8px rgba(0, 0, 0, .4), 0 2px 6px rgba(0, 0, 0, .2)",
+        "resolvedValue": "0 8px 24px -8px rgba(0, 0, 0, .4), 0 2px 6px rgba(0, 0, 0, .2)"
+      },
+      "--gz-shadow-sm": {
+        "expression": "0 2px 8px -2px rgba(0, 0, 0, .3)",
+        "resolvedValue": "0 2px 8px -2px rgba(0, 0, 0, .3)"
+      },
+      "--gz-shadow-xs": {
+        "expression": "0 1px 2px rgba(0, 0, 0, .2)",
+        "resolvedValue": "0 1px 2px rgba(0, 0, 0, .2)"
+      },
+      "--gz-sidebar-width": {
+        "expression": "17.5rem",
+        "resolvedValue": "17.5rem"
+      },
+      "--gz-sp-0": {
+        "expression": "0",
+        "resolvedValue": "0"
+      },
+      "--gz-sp-1": {
+        "expression": ".25rem",
+        "resolvedValue": ".25rem"
+      },
+      "--gz-sp-10": {
+        "expression": "2.5rem",
+        "resolvedValue": "2.5rem"
+      },
+      "--gz-sp-12": {
+        "expression": "3rem",
+        "resolvedValue": "3rem"
+      },
+      "--gz-sp-16": {
+        "expression": "4rem",
+        "resolvedValue": "4rem"
+      },
+      "--gz-sp-2": {
+        "expression": ".5rem",
+        "resolvedValue": ".5rem"
+      },
+      "--gz-sp-20": {
+        "expression": "5rem",
+        "resolvedValue": "5rem"
+      },
+      "--gz-sp-24": {
+        "expression": "6rem",
+        "resolvedValue": "6rem"
+      },
+      "--gz-sp-3": {
+        "expression": ".75rem",
+        "resolvedValue": ".75rem"
+      },
+      "--gz-sp-4": {
+        "expression": "1rem",
+        "resolvedValue": "1rem"
+      },
+      "--gz-sp-5": {
+        "expression": "1.25rem",
+        "resolvedValue": "1.25rem"
+      },
+      "--gz-sp-6": {
+        "expression": "1.5rem",
+        "resolvedValue": "1.5rem"
+      },
+      "--gz-sp-8": {
+        "expression": "2rem",
+        "resolvedValue": "2rem"
+      },
+      "--gz-success": {
+        "expression": "#78d9a8",
+        "resolvedValue": "#78d9a8"
+      },
+      "--gz-success-soft": {
+        "expression": "#172d25",
+        "resolvedValue": "#172d25"
+      },
+      "--gz-surface-canvas": {
+        "expression": "var(--gz-purple-950)",
+        "resolvedValue": "#140a24"
+      },
+      "--gz-surface-floating": {
+        "expression": "var(--gz-purple-800)",
+        "resolvedValue": "#3e2c5a"
+      },
+      "--gz-surface-interactive": {
+        "expression": "#302340",
+        "resolvedValue": "#302340"
+      },
+      "--gz-surface-panel": {
+        "expression": "var(--gz-purple-900)",
+        "resolvedValue": "#261a3d"
+      },
+      "--gz-surface-sidebar": {
+        "expression": "#1b102c",
+        "resolvedValue": "#1b102c"
+      },
+      "--gz-tone-accent-fg": {
+        "expression": "var(--gz-yellow-300)",
+        "resolvedValue": "#fbd644"
+      },
+      "--gz-tone-brand-bg": {
+        "expression": "var(--gz-purple-900)",
+        "resolvedValue": "#261a3d"
+      },
+      "--gz-tone-brand-bg-strong": {
+        "expression": "var(--gz-purple-800)",
+        "resolvedValue": "#3e2c5a"
+      },
+      "--gz-tone-brand-fg": {
+        "expression": "var(--gz-purple-200)",
+        "resolvedValue": "#cfb8f3"
+      },
+      "--gz-tone-brand-fg-muted": {
+        "expression": "var(--gz-purple-300)",
+        "resolvedValue": "#b594e8"
+      },
+      "--gz-tone-brand-fg-strong": {
+        "expression": "var(--gz-purple-100)",
+        "resolvedValue": "#e7dcfb"
+      },
+      "--gz-tone-brand-solid": {
+        "expression": "var(--gz-purple-300)",
+        "resolvedValue": "#b594e8"
+      },
+      "--gz-tone-brand-solid-muted": {
+        "expression": "var(--gz-purple-400)",
+        "resolvedValue": "#9a74d4"
+      },
+      "--gz-tone-warm-fg": {
+        "expression": "var(--gz-orange-300)",
+        "resolvedValue": "#ffa14d"
+      },
+      "--gz-tooltip-bg": {
+        "expression": "var(--gz-purple-900)",
+        "resolvedValue": "#261a3d"
+      },
+      "--gz-tooltip-fg": {
+        "expression": "var(--gz-ink-0)",
+        "resolvedValue": "#ffffff"
+      },
+      "--gz-tracking-caps": {
+        "expression": ".1em",
+        "resolvedValue": ".1em"
+      },
+      "--gz-tracking-display": {
+        "expression": "-.045em",
+        "resolvedValue": "-.045em"
+      },
+      "--gz-tracking-normal": {
+        "expression": "0",
+        "resolvedValue": "0"
+      },
+      "--gz-tracking-tight": {
+        "expression": "-.025em",
+        "resolvedValue": "-.025em"
+      },
+      "--gz-tracking-wide": {
+        "expression": ".025em",
+        "resolvedValue": ".025em"
+      },
+      "--gz-type-body": {
+        "expression": "1rem",
+        "resolvedValue": "1rem"
+      },
+      "--gz-type-body-lg": {
+        "expression": "1.125rem",
+        "resolvedValue": "1.125rem"
+      },
+      "--gz-type-body-sm": {
+        "expression": ".875rem",
+        "resolvedValue": ".875rem"
+      },
+      "--gz-type-caption": {
+        "expression": ".75rem",
+        "resolvedValue": ".75rem"
+      },
+      "--gz-type-code": {
+        "expression": ".8125rem",
+        "resolvedValue": ".8125rem"
+      },
+      "--gz-type-display": {
+        "expression": "clamp(2.75rem, 5vw, 4.5rem)",
+        "resolvedValue": "clamp(2.75rem, 5vw, 4.5rem)"
+      },
+      "--gz-type-h1": {
+        "expression": "2.5rem",
+        "resolvedValue": "2.5rem"
+      },
+      "--gz-type-h2": {
+        "expression": "2rem",
+        "resolvedValue": "2rem"
+      },
+      "--gz-type-h3": {
+        "expression": "1.5rem",
+        "resolvedValue": "1.5rem"
+      },
+      "--gz-type-h4": {
+        "expression": "1.125rem",
+        "resolvedValue": "1.125rem"
+      },
+      "--gz-type-label": {
+        "expression": ".875rem",
+        "resolvedValue": ".875rem"
+      },
+      "--gz-warning": {
+        "expression": "var(--gz-yellow-300)",
+        "resolvedValue": "#fbd644"
+      },
+      "--gz-warning-soft": {
+        "expression": "#382b14",
+        "resolvedValue": "#382b14"
+      }
+    }
+  }
+}

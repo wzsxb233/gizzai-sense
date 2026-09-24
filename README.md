@@ -12,6 +12,8 @@ This repository is the reference inference code. The weights are released separa
 | Gizzai-Sense-E2B (small, for edge devices) | [GizzAI/Gizzai-Sense-E2B](https://huggingface.co/GizzAI/Gizzai-Sense-E2B) | [GizzAI/Gizzai-Sense-E2B](https://modelscope.cn/models/GizzAI/Gizzai-Sense-E2B) |
 | Gizzai-Sense-E4B (stronger, for servers) | [GizzAI/Gizzai-Sense-E4B](https://huggingface.co/GizzAI/Gizzai-Sense-E4B) | [GizzAI/Gizzai-Sense-E4B](https://modelscope.cn/models/GizzAI/Gizzai-Sense-E4B) |
 
+Live bilingual demo hubs / 在线双语试用入口: [E2B on HF](https://huggingface.co/spaces/GizzAI/Gizzai-Sense-E2B-Demo) · [E2B on ModelScope](https://modelscope.cn/studios/GizzAI/Gizzai-Sense-E2B-Demo/summary) · [E4B on HF](https://huggingface.co/spaces/GizzAI/Gizzai-Sense-E4B-Demo) · [E4B on ModelScope](https://modelscope.cn/studios/GizzAI/Gizzai-Sense-E4B-Demo/summary). The full Space and quota status is in [`docs/spaces.md`](docs/spaces.md) / 完整 Space 与配额状态见 [`docs/spaces.md`](docs/spaces.md)。
+
 Technical report (English and Chinese, with demo videos):
 [GizzAI/Gizzai-Sense-Report](https://modelscope.cn/studios/GizzAI/Gizzai-Sense-Report)
 
@@ -99,15 +101,39 @@ write to dengyicun@gizzai.com. Use of the Gemma-derived weights is also subject 
 许可协议为 Apache 2.0 加附加条款（见 `LICENSE`）：个人、学术研究与年营收 10 万美元以下的机构可免费使用。
 商业授权、学术合作，以及高性能推理、训练与强化学习框架，请联系 dengyicun@gizzai.com。
 
-## Sense-T time-series inference
+## Sense-T time-series inference / Sense-T 时序推理
 
 The Sense-T release adds typed judgements and calibrated 10/50/90% forecasts over a time series. Its
-reference implementation is in [`sense_t.py`](sense_t.py), with the transformers remote-code adapter in
+reference implementation is [`sense_t.py`](sense_t.py), with the Transformers remote-code adapter in
 [`modeling_sense_t.py`](modeling_sense_t.py). The open-weight model and bundled Chronos-2 encoder are
 published at [GizzAI/Gizzai-Sense-T-E2B](https://huggingface.co/GizzAI/Gizzai-Sense-T-E2B).
 
-Runtime adapters and their verification status are documented in [`docs/runtimes.md`](docs/runtimes.md).
-Transformers is verified; llama.cpp has a measured C++ path. vLLM and MLX adapters are experimental, and
-Ollama can run the GGUF but does not expose the token probabilities required for calibrated Sense output.
-Phone deployment uses the llama.cpp core; Android and iPhone packaging and device validation remain
-follow-up work.
+Sense-T 在时序上增加类型化判断，以及经过校准的 10/50/90% 预测。参考实现是
+[`sense_t.py`](sense_t.py)，Transformers remote-code 适配器是 [`modeling_sense_t.py`](modeling_sense_t.py)。开放权重与内置 Chronos-2 编码器发布在
+[GizzAI/Gizzai-Sense-T-E2B](https://huggingface.co/GizzAI/Gizzai-Sense-T-E2B)。
+
+### Runtime status / 运行时状态
+
+| Runtime / 运行时 | Status / 状态 |
+|---|---|
+| Transformers | **Verified / 已验证** |
+| llama.cpp | **Verified measured C++ path / 已验证的实测 C++ 路径** |
+| Ollama | **GGUF smoke test only; calibrated Sense readout not conformed / 仅 GGUF 冒烟测试，校准 Sense readout 未完成一致性验证** |
+| vLLM | **Adapter experimental; no endpoint conformance result / 适配器实验性，尚无 endpoint conformance 结果** |
+| MLX | **Adapter experimental; requires Apple Silicon verification / 适配器实验性，需要 Apple Silicon 验证** |
+| Android / iPhone / macOS | **Bilingual test shells; no physical-device claim yet / 双语试用壳，尚无真机完成声明** |
+
+The measured runtime evidence and reproduction commands are in [`docs/runtimes.md`](docs/runtimes.md).
+/ 实测证据与复现命令见 [`docs/runtimes.md`](docs/runtimes.md)。
+
+The bilingual Sense-T technical report is [`docs/paper_sense_t_bilingual.md`](docs/paper_sense_t_bilingual.md).
+/ Sense-T 中英双语技术报告见 [`docs/paper_sense_t_bilingual.md`](docs/paper_sense_t_bilingual.md)。
+
+### Target-device packages / 目标设备试用包
+
+- [`packages/sense-t-macos/`](packages/sense-t-macos/) — SwiftUI bilingual macOS shell / SwiftUI 双语 macOS 试用壳
+- [`packages/sense-t-android/`](packages/sense-t-android/) — Jetpack Compose bilingual Android shell / Jetpack Compose 双语 Android 试用壳
+
+Both use the existing GizzAI design-system tokens, fonts and brand assets, and connect to the released
+Sense-T API. They require a running Sense-T server; they are test packages until the target devices pass
+runtime conformance. / 两个包都使用现有 GizzAI design system 的 token、字体和品牌资源，并连接已发布的 Sense-T API。它们需要运行中的 Sense-T server；目标设备通过运行时一致性验证前，保持为试用包。
